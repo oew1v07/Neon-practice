@@ -51,7 +51,7 @@ init_norm = Gaussian(loc=0.0, scale=0.01)
 
 layers = []
 layers.append(Affine(nout=100, init=init_norm,activation=Rectlin()))
-layers.append(Affine(nout=10, init=init_norm,activation=Softmax()))
+layers.append(Affine(nout=nclass, init=init_norm,activation=Softmax()))
 
 
 # we now construct the model
